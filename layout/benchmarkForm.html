@@ -1,0 +1,21 @@
+
+<template name="benchmarkForm">
+  <form>
+    <fieldset>
+      <legend>Perform Benchmark</legend>
+      <select name="testCase">
+        {{#each testCases}}
+          <option value="{{ index }}">{{ label }}</option>
+        {{/each}}
+      </select>
+      <textarea name="options">{ "count": 100, "sampleSize": 1}</textarea>
+      <span class="help error">{{ error }}</span>
+      <div class="control-group">
+        <button type="submit" class="btn">Run Benchmark</button>
+      </div>
+      <div class="control-group">
+        {{> benchmarkProgress }}
+      </div>
+    </fieldset>
+  </form>
+</template>

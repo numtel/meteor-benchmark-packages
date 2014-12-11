@@ -1,0 +1,28 @@
+
+<body>
+  {{> benchmarkToggle }}
+  {{> benchmarkOverlay }}
+</body>
+
+<template name="benchmarkToggle">
+  <a id="benchmark-toggle" class="btn {{ active }}">
+    <i class="icon-time"></i> Benchmark
+  </a>
+</template>
+
+<template name="benchmarkOverlay">
+  <div id="benchmark" class="{{ hidden }}">
+    {{> benchmarkForm }}
+    {{> benchmarkGraph }}
+  </div>
+</template>
+
+<template name="benchmarkProgress">
+  <div class="progress progress-striped active">
+    <div class="bar" style="width: {{ width }}%"></div>
+  </div>
+</template>
+
+<template name="benchmarkGraph">
+  <div id="benchmark-graph"><svg></svg></div>
+</template>
