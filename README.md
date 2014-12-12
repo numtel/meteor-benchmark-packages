@@ -8,6 +8,8 @@ Click on the 'Benchmark' button added to the interface, or press `F2`, to toggle
 
 Select a test and specify options use JSON. Also, raw results are presented in the browser's Javascript console.
 
+* [View source for Array insert benchmark...](test/arrayInserts.js)
+
 ## Installation
 
 Add the following lines to `package.js`:
